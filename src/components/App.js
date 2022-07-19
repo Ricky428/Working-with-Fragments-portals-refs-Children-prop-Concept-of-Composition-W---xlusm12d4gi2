@@ -1,4 +1,5 @@
 
+
 import React, { Component, useState } from "react";
 import '../styles/App.css';
 
@@ -38,13 +39,26 @@ class App extends Component {
   }
 
   render() {
+    let holidayList =this.cityList.filter((place)=> {
+      if(place.country==='India') {
+        return place
+      }
+    })
+    console.log(holidayList)
     return (
       <div id="main">
         {/* Do not remove the main div */}
+       <ol>{holidayList.map((item,idx)=> {
+        return <li key={'location'+(idx+1)}>{item.name}</li>
+       })}</ol>
       </div>
     )
   }
 }
+
+
+export default App;
+
 
 
 export default App;
