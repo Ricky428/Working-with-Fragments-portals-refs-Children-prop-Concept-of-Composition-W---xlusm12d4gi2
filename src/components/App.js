@@ -1,5 +1,3 @@
-
-
 import React, { Component, useState } from "react";
 import '../styles/App.css';
 
@@ -39,12 +37,11 @@ class App extends Component {
   }
 
   render() {
-    let holidayList =this.cityList.filter((place)=> {
-      if(place.country==='India') {
+    let holidayList = this.cityList.filter((place)=> {
+      if(place.country==='India')
         return place
-      }
     })
-    console.log(holidayList)
+    
     return (
       <div id="main">
         {/* Do not remove the main div */}
@@ -59,6 +56,3 @@ class App extends Component {
 
 export default App;
 
-
-
-export default App;
