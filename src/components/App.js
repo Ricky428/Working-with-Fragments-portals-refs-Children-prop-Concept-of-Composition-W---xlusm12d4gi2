@@ -38,7 +38,7 @@ class App extends Component {
 
   render() {
     let holidayList = this.cityList.filter((place)=> {
-      if(place.country==='India' && (name==='Goa' || name==='Darjeeling' || name==='Lonavala'))
+      if(place.country==='India' && (place.name==='Goa' || place.name==='Darjeeling' || place.name==='Lonavala'))
         return place
     })
     
